@@ -9,7 +9,7 @@ const WhyDodoo = () => {
     <section className="whydodoo">
       <div className="container">
         <div className="whydodoo__wrapper">
-          <h2>
+          <h2 className="section__title">
             Why <span>Dodoo</span>
           </h2>
           <div className="whydodoo__cards">
