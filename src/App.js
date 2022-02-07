@@ -27,22 +27,22 @@ function App() {
             <div className="footer__social__link">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={fb} alt="" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={whatsapp} alt="" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={phone} alt="" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <img src={gmail} alt="" />
                   </a>
                 </li>
