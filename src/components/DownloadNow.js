@@ -9,10 +9,10 @@ const DownloadNow = () => {
         <span>Playstore</span> and <span>IOS</span>
       </h2>
       <div className="downloadNow__buttons">
-        <a href="#">
+        <a href="https://exmaple.com">
           <img src={playstore} alt="" />
         </a>
-        <a href="#">
+        <a href="https://exmaple.com">
           <img src={ios} alt="" />
         </a>
       </div>

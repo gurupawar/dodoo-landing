@@ -9,7 +9,7 @@ const Header = () => {
             {/* <img src={logo} alt="" /> */}
             DODOO
           </span>
-          <a href="#dfg" className="header__download-btn btn">
+          <a href="https://exmaple.com" className="header__download-btn btn">
             Log In
           </a>
         </div>
