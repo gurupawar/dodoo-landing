@@ -2,17 +2,14 @@
 
 :root {
   --theme: #c8d635;
-  --white: #fff;
   --text: rgba(68, 77, 86, 1);
   --text-dark: rgba(33, 33, 33, 1);
-  --gray-bg: rgba(246, 248, 250, 1);
   --shadow: #212121;
-  --ease-in: cubic-bezier(0.4, 0, 1, 1);
-
   --dark: #111827;
-  --text-gray: #e5e7eb;
   --text-dark-gray: #374051;
   --green-gradient: linear-gradient(to right, #add100, #7b920a);
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
 }
 .container {
   padding-right: 1rem;
