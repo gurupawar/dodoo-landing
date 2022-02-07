@@ -1,6 +1,5 @@
 import React from "react";
-import services1 from "../assets/services-1.svg";
-import services2 from "../assets/services-2.svg";
+import { services1, services2 } from "../assets/index";
 
 const Services = () => {
   return (
@@ -11,7 +10,7 @@ const Services = () => {
           <br /> Provide
         </h2>
         <div className="services__cards">
-          <div className="services__cards-card">
+          <div className="services__cards-card shadow">
             <div className="services__cards-card-left">
               <ul>
                 <li>
@@ -34,7 +33,7 @@ const Services = () => {
               <img src={services1} alt="" />
             </div>
           </div>
-          <div className="services__cards-card">
+          <div className="services__cards-card shadow">
             <div className="services__cards-card-right">
               <img src={services2} alt="" />
             </div>

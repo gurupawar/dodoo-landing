@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/logo-nospace.png";
 
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
             {/* <img src={logo} alt="" /> */}
             DODOO
           </span>
-          <a href="#dfg" className="header__download-btn">
+          <a href="#dfg" className="header__download-btn btn">
             Log In
           </a>
         </div>

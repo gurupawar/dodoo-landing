@@ -12,7 +12,7 @@
   --dark: #111827;
   --text-gray: #e5e7eb;
   --text-dark-gray: #374051;
-  --blue-gradient: linear-gradient(to right, #add100, #7b920a);
+  --green-gradient: linear-gradient(to right, #add100, #7b920a);
 }
 .container {
   padding-right: 1rem;
@@ -20,6 +20,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.089);
   padding: 1rem 0;
@@ -43,17 +44,12 @@
   height: 55px;
 } */
 .header__download-btn {
-  /* border: 1px solid rgba(0, 0, 0, 0.089); */
-  background: var(--dark);
-  color: #fff;
   padding: 7px 1rem;
   font-weight: 500;
   border-radius: 3px;
   transition: background-color 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.header__download-btn:hover {
-  background: var(--theme);
-}
+
 /* --------------------------------------------------------- HERO */
 .hero {
   background-image: url(../assets/bg.svg);
@@ -88,25 +84,20 @@
   color: var(--text-dark-gray);
 }
 .hero__btn {
-  background: var(--dark);
-  color: #fff;
   padding: 1rem;
   font-weight: 500;
   border-radius: 3px;
-  transition: background-color 600ms cubic-bezier(0.23, 1, 0.32, 1);
   max-width: 100%;
   text-align: center;
   margin-top: 40px;
   font-weight: 700;
 }
-.hero__btn:hover {
-  background: var(--theme);
-}
+
 /* ----------------------------------------------------------------- END  */
 
 /* ---------------------------------------------------------------- WHY DODOO  */
 .whydodoo {
-  background: var(--blue-gradient);
+  background: var(--green-gradient);
 }
 .whydodoo__wrapper {
   display: flex;
@@ -115,8 +106,7 @@
   color: #fff;
   padding: 120px 0;
 }
-.whydodoo__wrapper h2 {
-}
+
 .whydodoo__wrapper h2 > span {
   color: var(--dark);
 }
@@ -152,11 +142,31 @@
   line-height: 1.3;
 }
 /* ----------------------------------------------------------------- END  */
-/* **************************************************************  */
+/* ************************************************************** COMMON Style */
 .section__title {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 56px;
+}
+
+.btn {
+  background: var(--dark);
+  border-radius: 3px;
+  color: #fff;
+  transition: background-color 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn:hover {
+  background: var(--theme);
+}
+
+.shadow {
+  border: 2px solid #212121;
+  border-radius: 7px;
+  box-shadow: 4px 4px 0px #212121;
+  transition: 0.1s var(--ease-in);
+}
+.shadow:hover {
+  box-shadow: 8px 8px 0px #212121;
 }
 /* *************************************************************** */
 
@@ -178,15 +188,8 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 4rem;
-  border: 1px solid #000;
   padding: 1.5rem 3rem;
-  border-radius: 7px;
-  box-shadow: 4px 4px 0px #212121;
-  transition: 0.1s var(--ease-in);
   min-height: 450px;
-}
-.services__cards-card:hover {
-  box-shadow: 8px 8px 0px #212121;
 }
 
 .services__cards-card-left {
@@ -211,7 +214,121 @@
 
 /* -------------------------------------------------------------- END  */
 /* -------------------------------------------------------------- SERVICES HOW TO ORDER  */
+.howToOrder {
+  padding-bottom: 120px;
+}
+.howToOrder__step {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 550px;
+}
+.howToOrder__step__wrapper {
+  display: flex;
+  margin-top: 2rem;
+}
+.howToOrder__step-content img {
+  /* width: 100%; */
+  /* max-height: 400px; */
+  margin-top: 1rem;
+}
+.howToOrder__step-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+}
 
+.howToOrder__step-content + .howToOrder__step-content {
+  margin-left: 2rem;
+}
+.howToOrder__step-content > span {
+  color: var(--dark);
+  font-weight: 600;
+}
+/* -------------------------------------------------------------- END  */
+/* -------------------------------------------------------------- SECTION DOWNLOAD NOW */
+.downloadNow {
+  padding: 120px 0;
+  background: var(--green-gradient);
+}
+.downloadNow__title {
+  color: #fff;
+}
+.downloadNow h2 span {
+  color: var(--dark);
+}
+.downloadNow__buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.downloadNow__buttons a + a {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+/* -------------------------------------------------------------- END  */
+/* -------------------------------------------------------------- SECTION GET IN TOUCH */
+
+.getInTouch {
+  padding: 120px 0;
+}
+
+.getInTouch__box {
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.getInTouch__box input[type="text"],
+input[type="email"],
+textarea {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #21212127;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+.getInTouch__box .getInTouch__btn {
+  display: inline-block;
+  max-width: 100px;
+  text-align: center;
+  padding: 7px 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------------------------- END  */
+/* -------------------------------------------------------------- FOOTER */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 1rem 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__wrapper span {
+  font-size: 14px;
+  color: var(--text-dark-gray);
+  margin-bottom: 10px;
+}
+.footer__social__link ul {
+  display: flex;
+}
+.footer__social__link ul li + li {
+  margin-left: 1rem;
+}
+.footer__social__link li a > img {
+  width: 25px;
+}
 /* -------------------------------------------------------------- END  */
 /* -------------------------------------------------------------- Media Queries */
 
@@ -234,6 +351,13 @@
   .whydodoo__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .downloadNow__buttons {
+    flex-direction: row;
+  }
+  .downloadNow__buttons a + a {
+    margin-top: 0;
+    margin-left: 1rem;
   }
 }
 
@@ -261,6 +385,12 @@
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .footer__wrapper {
+    flex-direction: row;
+  }
+  .footer__wrapper span {
+    margin-bottom: 0;
   }
 }
 

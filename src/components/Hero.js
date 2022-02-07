@@ -15,7 +15,7 @@ const Hero = () => {
             service in your locality? Need help finding a ride to travel,
             instantly?
           </p>
-          <a href="#dfg" className="hero__btn">
+          <a href="#dfg" className="hero__btn btn">
             Download Now
           </a>
         </div>

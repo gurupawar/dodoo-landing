@@ -1,8 +1,5 @@
 import React from "react";
-import gift from "../assets/bx-package.svg";
-import message from "../assets/bx-message-dots.svg";
-import shopping from "../assets/bx-cart.svg";
-import truck from "../assets/bxs-truck.svg";
+import { gift, message, truck, shopping } from "../assets/index";
 
 const WhyDodoo = () => {
   return (
