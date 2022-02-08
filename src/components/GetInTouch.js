@@ -5,7 +5,7 @@ const GetInTouch = () => {
     <section className="getInTouch">
       <div className="container">
         <h2 className="section__title services__title">
-          Get in <span>Touch</span> you
+          Get in <span>Touch</span>
         </h2>
         <div className="getInTouch__box shadow">
           <input type="text" placeholder="Name" required />
